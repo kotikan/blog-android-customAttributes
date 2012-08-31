@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="RangeEditText">
+        <attr name="charInputMinimum" format="integer"/>
+        <attr name="charInputMaximum" format="integer"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.kotikan.blogposts"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp"
+    >
+
+    <com.kotikan.blogposts.views.RangeEditText
+        style="@android:style/Widget.EditText"
+        android:id="@+id/range_edit_with_attributes_set"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:charInputMinimum="8"
+        app:charInputMaximum="40"
+        android:text="this is valid - allows up to 40 chars"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.kotikan.blogposts.views.RangeEditText
+        style="@android:style/Widget.EditText"
+        android:id="@+id/range_edit_without_attributes_set"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="this is not valid - only allows 10"
+        />
+
+</LinearLayout>
+
